@@ -7,6 +7,90 @@
 body {
     font-family:  "Roboto", sans-serif;
 }
-h1 {
-    color: red;
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    background-color: #1c2833;
+    align-items: center;
+    height: 80px;
+    padding: 0px 50px 0px 80px;
+}
+.h1-div {
+    font-size: 20px;
+    color: white;
+}
+.navigation ul {
+    display: flex;
+}
+.navigation ul li {
+   list-style-type: none;
+   margin: 0  10px;
+}
+.navigation ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 9px 13px;
+    border-radius: 5px;
+    transition: 0.7s;
+}
+.navigation ul li a:hover, nav ul li a.active {
+    background-color: rgba(255, 255, 255, 0.424);
+    
+}
+.menu-btn {
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+    display: none;
+}
+#click  {
+    display: none;
+}
+
+/* responsive work start */
+
+@media only screen and (max-width: 940px) {
+     .menu-btn {
+        display: block;
+     }
+     nav ul {
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        background-color: #142a41;
+        height: 100vh;
+        width: 100%;
+        padding-top: 20px;
+        flex-direction: column;
+        text-align: center;
+        transition: all 0.5s ease;
+     }
+     #click:checked ~ .menu-btn i::before{
+        content: "\f00d";
+     }
+     #click:checked ~ ul {
+        left: 0%;
+     }
+     .navigation ul li{
+        margin: 50px 0;
+     }
+     .navigation ul li a {
+        font-size: 22px;
+     }
+     .navigation ul li a:hover, .navigation ul li a.active{
+        background: none;
+        color: red;
+     }
+}
+
+/*header section start code hare */
+
+header {
+    background-image: url(img/banner.jpg);
+    height: 89vh;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
