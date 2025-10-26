@@ -313,3 +313,86 @@ header {
 }
 
 }
+
+/* four section start code hare */ 
+
+#four-section {
+    background-color: #1a3f60;
+    padding: 100px 0;
+}
+
+.prant-section4 {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    color: white;
+    margin-left: 400px;
+    margin-right: 400px;
+}
+
+.single-section {
+    display: block;
+}
+.single-section div img {
+    width: 100%;
+}
+.single-section h2 {
+    margin: 10px 0;
+}
+
+.ankor-section4 {
+    text-align: center;
+}
+.ankor-section4 a {
+    display: inline-block;
+    margin: 15px 5px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    background-color: white;
+}
+.ankor-section4 i {
+    color: black;
+    font-size: 18px;
+}
+.single-section4-2 h2 {
+    font-size: 28px;
+    margin: 10px 0;
+}
+.single-section4-2 p {
+    margin: 20px 0;
+}
+.single-section4-2 a {
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    padding: 10px 25px;
+    border-radius: 20px;
+    font-size: large;
+    font-weight: 500;
+    display: inline-block;
+    margin-top: 5px;
+}
+
+/* four media section start code hare */
+@media only screen and (max-width: 688px) {
+
+.prant-section4 {
+    display: block;
+    color: white;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+}
+
+
+@media only screen and (min-width: 689px) and (max-width: 1099px) {
+   
+.prant-section4 {
+    display: block;
+    color: white;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+}
